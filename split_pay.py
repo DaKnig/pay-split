@@ -29,6 +29,8 @@ def main():
 		print(f"{name}: {sum}", file=log) # logging
 
 	# now the split
+	if total == 0:
+		exit(1)
 	avg = total / len(sums)
 	print(f"\neach person shall pay {avg:.2f}\n")
 	print(f"\neach person shall pay {avg:.2f}\n", file=log)
