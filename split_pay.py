@@ -42,8 +42,8 @@ def main():
 		# now the biggest debter pays the biggest creditor
 		sum_to_pay = min(abs(sums[0][1]), abs(sums[-1][1]))
 
-		print(f"{sums[0][0]} pays {sum_to_pay:.f} to {sums[-1][0]}")
-		print(f"{sums[0][0]} pays {sum_to_pay:.f} to {sums[-1][0]}", file=log)
+		print(f"{sums[0][0]} pays {sum_to_pay:.2f} to {sums[-1][0]}")
+		print(f"{sums[0][0]} pays {sum_to_pay:.2f} to {sums[-1][0]}", file=log)
 
 		sums[-1][1] -= sum_to_pay
 		sums[0][1] += sum_to_pay
